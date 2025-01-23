@@ -1,7 +1,7 @@
 * {
   font-family: "Poppins";
 }
-.web-hosting-heading {
+.lemon-wares-heading {
   font-family: Inter;
   font-weight: 800;
   font-size: 30px;
@@ -22,9 +22,7 @@
   margin: 0px 20px 0px 20px;
 }
 
-.toggle-btn{
-  /* margin: 0px 20px 0px 20px; */
-}
+
 
 .text-discount {
   background:#FFE87A;
@@ -36,5 +34,12 @@
   color: #000000;
 }
 
+
+@media screen and (max-width: 767px) {
+  .lemon-wares-heading {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
 
 

@@ -1,5 +1,5 @@
 *{
-    font-family: Poppins;
+    font-family: Poppins !important;
 }
 .myCreateAcountBtn{
     background: #B00000;
@@ -8,7 +8,7 @@
 }
 .content-heading{
     font-size: 64px;
-    font-weight: 700 !important;
+    font-weight: 700;
     line-height: 77.5px;
     color: #2E2E2E;
 }
@@ -17,8 +17,14 @@
 .myCardtabContent{
     margin-bottom: 30px;
 }
-@media screen and (max-width: 767) { 
+@media screen and (max-width: 767px) { 
     .myCardtabContent{
         margin-bottom: 30px;
     }
+
+    .content-heading{
+        font-size: 20px !important;
+        line-height: 30px !important;
+      }
 }
+

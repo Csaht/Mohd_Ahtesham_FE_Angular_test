@@ -41,3 +41,11 @@
     max-height: 100%;
     object-fit: contain; /* Prevents image stretching */
   }
+
+  
+@media screen and (max-width: 767px) {
+  .card-title {
+    font-size: 16px;
+    line-height: 30px;
+  }
+}

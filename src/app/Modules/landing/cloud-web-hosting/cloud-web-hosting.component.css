@@ -41,6 +41,10 @@
     display: flex !important;
     flex-direction: column;
   }
+  .web-hosting-heading{
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 768px) {
