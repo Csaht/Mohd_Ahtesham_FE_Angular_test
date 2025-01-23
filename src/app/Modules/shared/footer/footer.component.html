@@ -1,3 +1,4 @@
+
 <section class="container-fluid footer-bg">
   <div class="container">
     <footer class="text-center text-white py-4">
@@ -22,7 +23,7 @@
               </p>
             </div>
           </div>
-
+         
           <!-- Links sections -->
           <div
             class="footer-links col-6 col-md-3 col-lg-2 mb-4"
@@ -32,7 +33,7 @@
               <li>
                 <h3 class="mb-4 list-heading">{{ section.heading }}</h3>
               </li>
-              <li class="myLi" *ngFor="let link of section.links">
+              <li class="myLi"  (click)=navigate() *ngFor="let link of section.links">
                 {{ link }}
               </li>
             </ul>

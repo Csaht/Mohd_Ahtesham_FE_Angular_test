@@ -18,8 +18,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     CommonModule,
-    // MaterialModule,
-    // NgFor
+   
   ],
   exports:[...components]
 })

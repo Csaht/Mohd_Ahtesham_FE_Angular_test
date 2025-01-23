@@ -1,6 +1,6 @@
 <section class="container">
   <div>
-    <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+    <mat-tab-group class="custom-tab-group" mat-stretch-tabs="false" mat-align-tabs="start">
       <mat-tab label="Hosting"
         ><app-premimum-web-hosting-content
           [contentHeading]="contentHeading"
@@ -9,13 +9,22 @@
         ></app-premimum-web-hosting-content
       ></mat-tab>
       <mat-tab label="Domain"
-        ><app-premimum-web-hosting-content></app-premimum-web-hosting-content
-      ></mat-tab>
+        >
+        <app-premimum-web-hosting-content
+        [contentHeading]="contentHeading"
+        [contentPara]="contentPara"
+        [imgUrl]="imgUrl"
+      ></app-premimum-web-hosting-content>
+    </mat-tab>
       <mat-tab label="SEO "
         ><app-premimum-web-hosting-content></app-premimum-web-hosting-content>
       </mat-tab>
       <mat-tab label="Email"
-        ><app-premimum-web-hosting-content></app-premimum-web-hosting-content
+        ><app-premimum-web-hosting-content
+        [contentHeading]="contentHeading"
+        [contentPara]="contentPara"
+        [imgUrl]="imgUrl"
+      ></app-premimum-web-hosting-content
       ></mat-tab>
     </mat-tab-group>
   </div>

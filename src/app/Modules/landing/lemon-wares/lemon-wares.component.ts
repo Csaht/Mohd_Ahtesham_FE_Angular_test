@@ -27,6 +27,7 @@ export class LemonWaresComponent {
   ];
   isToggled = false; // Initialize the toggle state
   cardDollerValue = 1;
+  cardDollerValue5=5
 
   ngAfterViewInit() {
     console.log('Child component accessed: ', this.childComponent);
@@ -35,7 +36,7 @@ export class LemonWaresComponent {
   toggleChildComponentStatus(isToggled: boolean) {
     if (this.childComponent) {
       // Update child component status
-      const status = isToggled ? 'Active' : 'Inactive';
+      const status = isToggled ? 'Monthly' : 'Yearly';
       this.childComponent.updateStatus(status);
     }
   }

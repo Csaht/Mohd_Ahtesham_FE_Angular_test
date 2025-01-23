@@ -19,9 +19,9 @@ export class LemonwarescardsComponent {
       this.cardDollerValue = 0;
     }
 
-    if (status === 'Active') {
+    if (status === 'Yearly') {
       this.cardDollerValue++;
-    } else if (status === 'Inactive') {
+    } else if (status === 'Monthly') {
       this.cardDollerValue--;
     }
   }

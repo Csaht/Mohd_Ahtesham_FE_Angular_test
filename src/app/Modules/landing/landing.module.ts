@@ -14,8 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CloudWebHostingComponent } from './cloud-web-hosting/cloud-web-hosting.component';
 import { WebhostingcardsComponent } from './webhostingcards/webhostingcards.component';
 import { LemonwarescardsComponent } from './lemonwarescards/lemonwarescards.component';
-import { DynamicComponent1Component } from './dynamic-component1/dynamic-component1.component';
-import { DynamicComponent2Component } from './dynamic-component2/dynamic-component2.component';
+
 import { GetInTouchComponent } from './get-in-touch/get-in-touch.component';
 import { CustomerReviewsComponent } from './customer-reviews/customer-reviews.component';
 import { LemonWaresComponent } from './lemon-wares/lemon-wares.component';
@@ -25,6 +24,7 @@ import { PremimumWebHostingContentComponent } from './premimum-web-hosting-conte
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule } from '@angular/forms';
+import { DefaultdevelopmentComponent } from '../shared/defaultdevelopment/defaultdevelopment.component';
 
 const components=[ 
   HomeComponent,
@@ -38,27 +38,28 @@ const components=[
   GetInTouchComponent,
   CustomerReviewsComponent,
   LemonWaresComponent,
+
+  PremimumWebHostingComponent,
+   PremimumWebHostingContentComponent,
+   DefaultdevelopmentComponent
+  
 ]
 
 const routes: Routes = [
   {path:'',redirectTo:'landing',pathMatch:'full'},
-  {path:'landing',component:LandingComponent}
+  {path:'landing',component:LandingComponent},
+  {path:'page-error',component:DefaultdevelopmentComponent}
+
+
+  
  ]
+ 
+
 
 @NgModule({
   declarations: [
    ...components,
-   DynamicComponent1Component,
-   DynamicComponent2Component,
-   TestCarosulbootstrapComponent,
-   TextanimationComponent,
-   PremimumWebHostingComponent,
-   PremimumWebHostingContentComponent,
-
-  
-  //  CloudWebHostingComponent,
-   
-  ],
+ ],
   imports: [
     CommonModule,
     LandingRoutingModule,
@@ -70,8 +71,9 @@ const routes: Routes = [
     RouterModule,
     MatTabsModule,
     MatSlideToggleModule,
-     MatIconModule,
-      FormsModule
+    MatIconModule,
+    FormsModule,
+
    
   
   ],

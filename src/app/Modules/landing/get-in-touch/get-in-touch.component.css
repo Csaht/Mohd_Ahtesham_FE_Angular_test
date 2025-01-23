@@ -10,6 +10,7 @@ button {
   font-weight: 400;
   line-height: 24px;
   margin: 24px;
+  border: none;
 }
 .myGetTouch {
   display: flex;
@@ -30,7 +31,7 @@ img {
 
 .myGetTouch {
   position: relative;
-  border: 2px solid #ccc;
+  /* border: 2px solid #ccc; */
   padding: 20px;
   border-radius: 8px;
   background-color: #f9f9f9;
@@ -78,4 +79,12 @@ img {
   bottom: 0;
   right: 0;
   background-image: url("/asset/image/Elements(2).png");
+}
+.my-btn{
+  display: flex;
+  justify-content: center;
+}
+
+.pageSection{
+  border-radius: 10px;
 }

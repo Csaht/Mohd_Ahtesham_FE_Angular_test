@@ -1,3 +1,4 @@
+
 <div class="container">
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
@@ -22,23 +23,31 @@
       <!-- Navigation Links -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <span class="nav-link active cursor-pointer" routerLink="/#"
+          <!-- <li class="nav-item">
+            <span class="nav-link active cursor-pointer" routerLink="/page-error"
               >Our Services</span
             >
+          </li> -->
+          <li class="nav-item">
+          
+            <span 
+              class="nav-link active cursor-pointer" 
+              (click)="navigate()">
+              Our Services
+            </span>
           </li>
           <li class="nav-item">
-            <span class="nav-link active cursor-pointer" routerLink="/#"
+            <span class="nav-link active cursor-pointer"  (click)="navigate()"
               >About</span
             >
           </li>
           <li class="nav-item">
-            <span class="nav-link active cursor-pointer" routerLink="/#"
+            <span class="nav-link active cursor-pointer"  (click)="navigate()"
               >Blogs/News</span
             >
           </li>
           <li class="nav-item">
-            <span class="nav-link cursor-pointer" routerLink="/#">Contact</span>
+            <span class="nav-link cursor-pointer"  (click)="navigate()">Contact</span>
           </li>
         </ul>
 

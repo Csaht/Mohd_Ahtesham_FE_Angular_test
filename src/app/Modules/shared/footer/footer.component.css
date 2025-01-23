@@ -20,6 +20,7 @@
   font-size: 16px;
   line-height: 32px;
   color: #e6e6e6;
+  cursor: pointer;
 }
 .list-heading {
   line-height: 24px;
