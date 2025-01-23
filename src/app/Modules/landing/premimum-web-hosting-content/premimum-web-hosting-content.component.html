@@ -1,0 +1,36 @@
+<section class="container py-5">
+  <div class="row align-items-center">
+    <!-- Text Content -->
+    <div class="col-md-6 text-center text-md-start myCardtabContent">
+      <h1 class="fw-bold content-heading mb-4">
+        {{ contentHeading ?? "Premium Web Hosting for Your Website" }}
+      </h1>
+      <p class="mb-4">
+        {{
+          contentPara ??
+            "Blazing fast web hosting for individuals and businesses of all sizes backed by 24×7×365 Support."
+        }}
+      </p>
+      <div class="d-flex justify-content-center justify-content-md-start gap-3">
+        <button type="button" class="btn myCreateAcountBtn">
+          Create an Account
+        </button>
+        <button type="button" class="btn btn-outline-secondary">
+          Choose your plan
+        </button>
+      </div>
+    </div>
+    <!-- Image Content -->
+    <div class="col-md-6 text-center">
+      <img
+        *ngIf="imgUrl"
+        [src]="imgUrl"
+        class="img-fluid rounded"
+        alt="Hosting Image"
+      />
+      <div *ngIf="!imgUrl">
+        <h1 class="fw-bold content-heading mb-4">Image not found</h1>
+      </div>
+    </div>
+  </div>
+</section>

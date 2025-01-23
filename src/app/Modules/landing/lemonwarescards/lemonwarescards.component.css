@@ -1,0 +1,99 @@
+
+.card-title-container{
+    width: 100%;
+    /* background: red; */
+    text-align: justify;
+}
+.card-title{
+    font-Weight:700;
+    font-size:20px;
+    
+
+    font-weight: 800;
+    font-size: 30px;
+    font-family: 'Poppins';
+    /* margin-top: 30px; */
+}
+.cardDollerVal{
+   font-weight: 600;
+    font-size: 36px;
+    font-family: 'Poppins';
+}
+
+
+
+.card-body{
+    text-align: left;
+    padding: 25px;
+}
+
+.card-text{
+    font-Weight:300;
+    font-size:12px
+}
+
+.square-card {
+    width: 18rem;
+    aspect-ratio: 1 / 1; /* Ensures a square shape */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes content */
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card-body {
+    
+    flex-grow: 1; /* Allows content to grow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text */
+    /* background: red; */
+    border: 1px solid #C4C4C4;
+
+    margin: 44px 27px 19px 17px;
+    border-radius: 15px;
+
+  }
+  .list-text{
+    margin-left: 20px;
+    font-family:Inter;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 35px;
+  }
+  .cardDollerText{
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 14px;
+    color: #000000;
+  }
+  .w-100{
+     margin: 23px 0px 34px 0px;
+  }
+
+  .card-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Prevents image stretching */
+  }
+
+  .choose-plan{
+    border: 1px solid #000000;
+    padding: 10px;
+    background: #ffff;
+    border-radius: 4px;
+    width: 170px;
+    margin: 20px;
+  }
+  ul,li{
+    color: #808080;
+    text-align: left;
+    list-style-type: none;
+  }
+  .my-card{
+    overflow: visible;
+  }

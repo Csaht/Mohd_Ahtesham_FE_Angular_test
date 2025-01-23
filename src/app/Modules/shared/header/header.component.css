@@ -1,0 +1,23 @@
+*{
+    font-family: Poppins;
+    font-weight: 800;
+    font-size: 14px;
+    color: #000000;
+}
+
+.navbar-brand img {
+    max-height: 40px;
+  }
+  
+  .nav-item .nav-link {
+    margin-left: 10px;
+  }
+  
+  .nav-item img {
+    margin-right: 5px;
+  }
+  li{
+    cursor: pointer;
+    margin: 3px;
+  }
+  

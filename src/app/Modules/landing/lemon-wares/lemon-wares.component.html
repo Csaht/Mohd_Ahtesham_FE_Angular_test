@@ -1,0 +1,79 @@
+<section class="container py-5">
+  <!-- Heading and Package Information -->
+  <div class="text-center mb-4">
+    <h6 class="web-hosting-heading fw-bold">
+      Ready to get started with Lemon Wares?
+    </h6>
+    <p>Choose the package that suits you</p>
+  </div>
+
+  <!-- Discount and Yearly Buttons -->
+  <div
+    class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 mb-5"
+  >
+    <!-- <button type="button" class="btn btn-success">Success</button> -->
+    <!-- [(ngModel)]="isToggled" (change)="onToggleChange()" -->
+    <div class="toggle-div"> <span class="togle-m"> Monthly</span>
+      <mat-slide-toggle class="toggle-btn" (change)="toggleChildComponentStatus($event.checked)"
+        >
+        <span class="togle-m">Yearly</span>
+        </mat-slide-toggle
+      ></div>
+    <div class="text-center">
+      <!-- <p class="mb-0">Yearly</p> -->
+      <span class="text-discount fw-bold">20% discount</span>
+    </div>
+  </div>
+
+
+  <!-- Tab Group -->
+  <mat-tab-group class="custom-tab-group">
+    <!-- Basic Tab -->
+    <mat-tab label="Basic">
+      <div class="tab-content-container row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <app-lemonwarescards
+            cardTitle="Starter"
+            cardTitleText="with all your customers via all conversation channels in one central dashboard."
+            [cardDollerValue]="cardDollerValue"
+            cardDollerText="Per month"
+            [cardList]="cardList"
+          ></app-lemonwarescards>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <app-lemonwarescards
+            cardTitle="Starter"
+            cardTitleText="with all your customers via all conversation channels in one central dashboard."
+            cardDollerValue="2.80"
+            cardDollerText="Per month"
+            [cardList]="cardList"
+          ></app-lemonwarescards>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <app-lemonwarescards
+            cardTitle="Starter"
+            cardTitleText="with all your customers via all conversation channels in one central dashboard."
+            cardDollerValue="2.80"
+            cardDollerText="Per month"
+            [cardList]="cardList"
+          ></app-lemonwarescards>
+        </div>
+      </div>
+    </mat-tab>
+
+    <!-- Premium Tab -->
+    <mat-tab label="Premium">
+      <div class="tab-content-container row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <app-lemonwarescards [cardList]="cardList"></app-lemonwarescards>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <app-lemonwarescards [cardList]="cardList"></app-lemonwarescards>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <app-lemonwarescards [cardList]="cardList"></app-lemonwarescards>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</section>

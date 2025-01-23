@@ -1,0 +1,52 @@
+<section class="container-fluid footer-bg">
+  <div class="container">
+    <footer class="text-center text-white py-4">
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <!-- Logo and description -->
+          <div
+            class="footer-logo col-12 col-md-6 col-lg-4 text-start mb-4 mb-lg-0"
+          >
+            <div class="footer-logo-img-container mb-3">
+              <img
+                src="assets/images/footer_logo.png"
+                class="footer-logo-img img-fluid"
+                alt="Footer Logo"
+              />
+            </div>
+            <div class="footer-para">
+              <p class="text-start">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+                aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+                urna, porttitor rhoncus dolor purus non enim praesent elem
+              </p>
+            </div>
+          </div>
+
+          <!-- Links sections -->
+          <div
+            class="footer-links col-6 col-md-3 col-lg-2 mb-4"
+            *ngFor="let section of footerSections"
+          >
+            <ul class="list-unstyled">
+              <li>
+                <h3 class="mb-4 list-heading">{{ section.heading }}</h3>
+              </li>
+              <li class="myLi" *ngFor="let link of section.links">
+                {{ link }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copy-right py-3">
+        <p class="footer-copy-righ-para m-0">
+          Built by Jeremiah with <img src="assets/images/heart.png" /> in Lagos.
+          Copyright 2021
+        </p>
+      </div>
+    </footer>
+  </div>
+</section>

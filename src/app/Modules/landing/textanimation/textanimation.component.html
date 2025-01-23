@@ -1,0 +1,6 @@
+<div @myInsertRemoveTrigger [@openClose]="isOpen ? 'open' : 'closed'" class="open-close-container" (@openClose.start)="onAnimationEvent($event)"
+ (@openClose.done)="onAnimationEvent($event)">
+	<p>The box is now {{ isOpen ? 'Open' : 'Closed' }}!</p>
+</div>
+
+<button (click)="toggle()">Open/Close The Box </button>

@@ -1,0 +1,25 @@
+
+
+<div class="square-card my-card">
+    <div class="card-body"> 
+      <div class="card-title-container">
+        <div>
+            <div class="w-100"><h6 class="card-title">{{cardTitle ?? '--'}}</h6></div>
+            <p class="card-title-desc">{{cardTitleText ?? '--'}}</p>
+        </div>
+        <div class="w-100">
+            <div ><h6 class="cardDollerVal">${{cardDollerValue ?? '--'}}</h6></div>
+            <span class="cardDollerText">{{cardDollerText ?? '--'}}</span>
+          </div>
+      </div>
+     
+      <div class="choose-plan">Choose this Plan</div>
+      <div> 
+        <ul>
+            <li *ngFor="let item of cardList">
+                <div><img src="assets/images/Vector.png" /><span class="list-text">{{item}}</span></div>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </div>

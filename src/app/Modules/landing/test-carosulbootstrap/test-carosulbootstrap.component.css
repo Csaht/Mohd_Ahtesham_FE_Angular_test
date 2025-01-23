@@ -1,0 +1,16 @@
+.carousel-item img {
+    width: 100px; /* Adjust logo size */
+    margin: 0 15px;
+  }
+  
+  .carousel-inner {
+    align-items: center;
+    min-height: 150px; /* Adjust the height of the carousel */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional styling for controls */
+    border-radius: 50%;
+  }
+  

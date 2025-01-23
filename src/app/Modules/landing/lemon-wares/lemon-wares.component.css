@@ -1,0 +1,40 @@
+* {
+  font-family: "Poppins";
+}
+.web-hosting-heading {
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.tab-content-container {
+  display: flex;
+}
+
+.toggle-div{
+  font-weight: 300;
+    font-size: 20px;
+    line-height: 20px;
+}
+.togle-m{
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0px 20px 0px 20px;
+}
+
+.toggle-btn{
+  /* margin: 0px 20px 0px 20px; */
+}
+
+.text-discount {
+  background:#FFE87A;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 500 !important;
+  font-size: 10px;
+  line-height: 9px;
+  color: #000000;
+}
+
+
+

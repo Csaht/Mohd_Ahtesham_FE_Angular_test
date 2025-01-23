@@ -1,0 +1,43 @@
+*{
+    font-family: 'Poppins';
+}
+
+.card-title{
+    font-Weight:700;
+    font-size:20px;
+    margin: 11px;
+}
+.card-body{
+    text-align: left;
+    padding: 25px;
+}
+
+.card-text{
+    font-Weight:300;
+    font-size:12px
+}
+
+.square-card {
+    width: 18rem;
+    aspect-ratio: 1 / 1; /* Ensures a square shape */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distributes content */
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .card-body {
+    flex-grow: 1; /* Allows content to grow */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Centers text */
+  }
+
+  .card-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Prevents image stretching */
+  }

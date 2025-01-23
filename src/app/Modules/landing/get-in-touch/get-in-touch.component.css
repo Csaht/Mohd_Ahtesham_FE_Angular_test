@@ -1,0 +1,81 @@
+* {
+  font-family: "Poppins";
+  background: #f7fafe;
+}
+
+button {
+  background: #b00000 !important;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 24px;
+}
+.myGetTouch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+img {
+  background: #b00000;
+}
+
+.get-touch-heading {
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.myGetTouch {
+  position: relative;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.myGetTouch::before,
+.myGetTouch::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.myGetTouch::before {
+  top: 0;
+  left: 0;
+  background-image: url("/assets/images/Elements(2).png");
+}
+
+.myGetTouch::after {
+  bottom: 0;
+  left: 0;
+
+  background-image: url("/assets/images/Elements (1).png");
+}
+
+.myGetTouch .corner-top-right,
+.myGetTouch .corner-bottom-right {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.myGetTouch .corner-top-right {
+  top: 0;
+  right: 0;
+  background-image: url("/assets/images/Elements.png");
+}
+
+.myGetTouch .corner-bottom-right {
+  bottom: 0;
+  right: 0;
+  background-image: url("/asset/image/Elements(2).png");
+}

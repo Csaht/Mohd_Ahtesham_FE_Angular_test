@@ -1,0 +1,57 @@
+.web-hosting-text-platform-container {
+  display: flex;
+}
+.image-container {
+  display: inline-block;
+  margin: 10px;
+  min-height: 86px;
+  max-height: 50px;
+  width: 140px;
+  border: none !important;
+}
+.web-hosting-heading {
+  font-family: Inter;
+  font-weight: 800;
+  font-size: 30px;
+  margin-top: 30px;
+}
+.web-hosting-para-tex {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.card-container-parent {
+  display: flex;
+  justify-content: center;
+}
+.card-container-child {
+  display: flex;
+}
+
+/* Media Queries */
+@media screen  and (max-width: 576px) {
+  .web-hosting-text-platform-container {
+    flex-direction: column;
+  }
+  .card-container-parent {
+    flex-direction: column;
+  }
+  .card-container-child {
+    display: flex !important;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .web-hosting-text-platform-container{
+    flex-direction: column !important;
+  }
+  .card-container-parent {
+    flex-direction: column !important;
+  }
+  .card-container-child {
+    display: flex !important;
+  }
+}
+

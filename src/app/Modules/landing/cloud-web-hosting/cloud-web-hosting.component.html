@@ -1,0 +1,55 @@
+
+
+<section class="container">
+
+  <div class="web-hosting-container">
+     <div class="web-hosting-text-platform-container row">
+         <!-- Text Section -->
+         <div class="web-hosting-text col-12 col-lg-6">
+           <h6 class="web-hosting-heading">True Cloud Web Hosting</h6>
+           <p class="web-hosting-para-tex">
+             True Cloud Web Hosting All of the hosting packages we offer are deployed instantly on our SSD-powered cloud. We don’t use dedicated servers that operate on single pieces of hardware. Our entire infrastructure is built to be reliable, secure, and scalable.
+           </p>
+         </div>
+       
+         <!-- Image Section -->
+         <div class="web-hosting-platform col-12 col-lg-6">
+           <div class="row">
+             <ng-container *ngFor="let item of hostingPlatformImg">
+               <div class="col-4 d-flex justify-content-center align-items-center mb-3">
+                 <div class="box border p-3 d-flex justify-content-center align-items-center image-container" style="width: 200px; height: 200px;">
+                   <img [src]="item?.linkName" class="img-fluid" />
+                 </div>
+               </div>
+             </ng-container>
+           </div>
+         </div>
+       </div>
+       
+      <div class="card-container-parent">
+         <div class="card-container-child">
+              <app-webhostingcards imgUrl="assets/images/icn1 1.png" 
+              cardHeading="99.9% First" cardPara="We Keep Your Web build Online 24x7x365.
+              Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.We Keep Your Web build Online 24x7x365.
+              Downtime not only costs you lost visitors but also damages your reputation and search engine rankings."></app-webhostingcards>
+              <app-webhostingcards imgUrl="assets/images/icn1 1.png" 
+              cardHeading="99.9% second" cardPara="We Keep Your Web build Online 24x7x365.
+              Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.We Keep Your Web build Online 24x7x365.
+              Downtime not only costs you lost visitors but also damages your reputation and search engine rankings."></app-webhostingcards>
+     
+         </div>
+         <div class="card-container-child">
+             <app-webhostingcards imgUrl="assets/images/icn1 1.png" 
+             cardHeading="99.9% third" cardPara="We Keep Your Web build Online 24x7x365.
+             Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.We Keep Your Web build Online 24x7x365.
+             Downtime not only costs you lost visitors but also damages your reputation and search engine rankings."></app-webhostingcards>
+             <app-webhostingcards imgUrl="assets/images/icn1 1.png" 
+             cardHeading="99.9% fourth" cardPara="We Keep Your Web build Online 24x7x365.
+             Downtime not only costs you lost visitors but also damages your reputation and search engine rankings.We Keep Your Web build Online 24x7x365.
+             Downtime not only costs you lost visitors but also damages your reputation and search engine rankings."></app-webhostingcards>
+    
+        </div> 
+     </div>
+  </div>
+ 
+ </section>
